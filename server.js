@@ -55,7 +55,9 @@ app.use(ProductRoute)
 app.use(DeleteSession)
 // store.sync();
 
-
+// app.listen(process.env.PORT || PORT, () => {
+//     console.log(`Server is listening on port`);
+// });
 
 const PORT = process.env.PORT
 app.listen(process.env.PORT, () => {
